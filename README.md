@@ -8,7 +8,7 @@ Sistema de análise, processamento e previsão de riscos de desastres naturais (
 
 ---
 
-## 📑 Sumário
+## Sumário
 
 * [Sobre o Projeto](#sobre-o-projeto)
   * [Principais Objetivos](#principais-objetivos)
