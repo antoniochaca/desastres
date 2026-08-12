@@ -51,3 +51,74 @@ disaster-als-java/
 ├── LICENSE
 ├── pom.xml                      # Gerenciador de dependências (Maven)
 └── README.md
+```
+
+---
+
+## Como Executar o Projeto
+
+### Pré-requisitos
+- Java JDK 17 ou superior
+- Apache Maven 3.8+ (ou utilitário Wrapper ./mvnw)
+- Git
+
+### 1. Clonar o Repositório
+```bash
+git clone [https://github.com/seu-usuario/disaster-als-java.git](https://github.com/seu-usuario/disaster-als-java.git)
+cd disaster-als-java
+```
+
+---
+
+### 2. Criar Ambiente Virtual e Instalar Dependências
+```bash
+mvn clean install
+```
+### 3. Executar a aplicação
+```bash
+mvn exec:java -Dexec.mainClass="com.disaster.Main"
+```
+
+#### Para avaliar um modelo pré-treinado:
+```bash
+python src/evaluate.py --model_path path/to/resnet152_weights.pth
+```
+---
+
+## Exemplo de Uso
+
+### Exemplo simplificado de execução do pipeline de análise de risco via código:
+```bash
+import com.disaster.als.ALSRiskEngine;
+import com.disaster.model.SensorData;
+import com.disaster.model.RiskReport;
+
+public class Main {
+    public static void main(String[] args) {
+        // Inicializa o motor de análise ALS
+        ALSRiskEngine engine = new ALSRiskEngine();
+
+        // Dados simulados de sensor
+        SensorData data = new SensorData("ESTACAO-01", 120.5 /* mm chuva */, 4.2 /* m rio */);
+
+        // Processa o risco estimado
+        RiskReport report = engine.evaluate(data);
+
+        System.out.println("Nível de Risco: " + report.getRiskLevel());
+        System.out.println("Recomendação: " + report.getRecommendation());
+    }
+}
+```
+### Executar o exemplo
+```bash
+mvn test
+```
+
+---
+
+## Licença
+Este projeto é distribuído sob a licença MIT. Sinta-se à vontade para estudar, utilizar e contribuir.
+
+
+
+
