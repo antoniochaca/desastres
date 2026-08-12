@@ -8,6 +8,23 @@ Sistema de análise, processamento e previsão de riscos de desastres naturais (
 
 ---
 
+## 📑 Sumário
+
+* [Sobre o Projeto](#sobre-o-projeto)
+  * [Principais Objetivos](#principais-objetivos)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Estrutura do Repositório](#estrutura-do-repositório)
+* [Como Executar o Projeto](#como-executar-o-projeto)
+  * [Pré-requisitos](#pré-requisitos)
+  * [1. Clonar o Repositório](#1-clonar-o-repositório)
+  * [2. Criar Ambiente Virtual e Instalar Dependências](#2-criar-ambiente-virtual-e-instalar-dependências)
+  * [3. Executar a aplicação](#3-executar-a-aplicação)
+* [Exemplo de Uso](#exemplo-de-uso)
+  * [Executar o exemplo](#executar-o-exemplo)
+* [Licença](#licença)
+
+---
+
 ## Sobre o Projeto
 
 O **Disaster Analytics System** foi idealizado para processar, estruturar e analisar dados geoespaciais e hidrológicos cruciais para a mitigação de desastres naturais. Através da integração de modelos estatísticos/preditivos (ALS) e ecossistema Java robusto, a plataforma oferece capacidade de processamento de alertas antecipados e mapeamento de áreas vulneráveis.
